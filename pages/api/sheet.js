@@ -13,6 +13,11 @@ export default async function handler(req, res) {
 
     const range = `Domiciliario!A1:Z999`;
 
+    console.log(
+      "google sheets doc id:",
+      process.env.REACT_APP_GOOGLE_SHEETS_DOC_ID
+    );
+
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.REACT_APP_GOOGLE_SHEETS_DOC_ID,
       range,
