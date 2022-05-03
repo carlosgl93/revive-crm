@@ -15,7 +15,7 @@ const Dashboard = () => {
             </Box>
           </Box>
           <Box>
-            <Box>BeeTrack</Box>
+            <Box>Testing env variables in vercel</Box>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={8}>
