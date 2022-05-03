@@ -31,10 +31,10 @@ const Excel = () => {
 
   if (data) {
     // console.log({ data });
-    const tableHeaders: any = data[0];
-    const tableBody: any = [data.slice(1, data.length)];
+    const tableHeaders = data[0];
+    const tableBody = [data.slice(1, data.length)];
 
-    const columns: object[] = [
+    const columns = [
       { field: "guia", headerName: "N Guia", width: 130 },
       { field: "dia", headerName: "Dia", width: 50 },
       { field: "movil", headerName: "Movil", width: 50 },
@@ -84,13 +84,13 @@ const Excel = () => {
         <Table stickyHeader>
           <TableHead>
             <TableRow>
-              {tableHeaders.map((header: string, index: number) => {
+              {tableHeaders.map((header, index) => {
                 return <TableCell key={index}>{header}</TableCell>;
               })}
             </TableRow>
           </TableHead>
           <TableBody>
-            {arraysToObject.map((register: any) => {
+            {arraysToObject.map((register) => {
               return (
                 <TableRow key={register.id}>
                   <TableCell>{register.id}</TableCell>

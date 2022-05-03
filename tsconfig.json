@@ -15,6 +15,14 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "admin/App.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "admin/App.js",
+    "components/Layout/Layout.js",
+    "components/Excel.js",
+    "pages/index.js"
+  ],
   "exclude": ["node_modules"]
 }
